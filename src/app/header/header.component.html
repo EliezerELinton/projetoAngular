@@ -1,0 +1,30 @@
+<header class="main-header">
+    <h1 class="main-header__title">
+        <span routerLink="/produtos" routerLinkActive="active" ariaCurrentWhenActive="page" class="main-header__title--blue">Eliézer</span>
+        <span routerLink="/produtos" routerLinkActive="active" ariaCurrentWhenActive="page" class="main-header__title--orange">Elinton</span>
+    </h1>
+    <div class="container-menu">
+    <nav class="main-header__menu">
+        <ul>
+            <li>
+                <a routerLink="/produtos" routerLinkActive="active" ariaCurrentWhenActive="page"> Produtos</a>
+            </li>
+            <li>
+                <a routerLink="/carrinho" routerLinkActive="active" ariaCurrentWhenActive="page"> 
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Carrinho
+                    <span class="badge-carrinho">{{carrinhoService.obtemCarrinho().length }}</span>
+                </a>
+                
+            </li>
+            <li><a routerLink="/contato" routerLinkActive="active" ariaCurrentWhenActive="page">Contato</a></li>
+            <li><a><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a><i class="fa-brands fa-square-instagram"></i></a></li> 
+            <li><a><i class="fa-brands fa-twitter"></i></a></li>
+            
+        </ul>
+    </nav>
+   <app-barradepesquisa></app-barradepesquisa>
+</div>
+
+</header>
